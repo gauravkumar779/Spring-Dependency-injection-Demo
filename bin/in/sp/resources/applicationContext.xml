@@ -4,16 +4,19 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+
+  <!--     -using constructor-method-(DI)     -->
+    
     <bean id="addrId" class="in.sp.beans.Address">
-        <property name="houseno" value="1001" />
-        <property name="city" value="Noida" />
-        <property name="pincode" value="250011" />
+        <constructor-arg value="222" />
+        <constructor-arg value="Delhi" />
+        <constructor-arg value="251009" />
     </bean>
     
     <bean id="stdId" class="in.sp.beans.Student">
-        <property name="rollno" value="220234" />
-        <property name="name" value="Mandeep Singhh" />
-        <property name="address" ref="addrId" />
+        <constructor-arg value="107" />
+        <constructor-arg value="Baani**" />
+        <constructor-arg ref="addrId" />
     </bean>
 
 </beans>

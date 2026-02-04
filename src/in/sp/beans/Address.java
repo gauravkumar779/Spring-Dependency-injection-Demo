@@ -7,16 +7,18 @@ public class Address {
 	private int pincode;
 	
 	
-	public void setHouseno(int houseno) {
+	
+	
+	public Address(int houseno, String city, int pincode) {
+		super();
 		this.houseno = houseno;
-	}
-	public void setCity(String city) {
 		this.city = city;
-	}
-	public void setPincode(int pincode) {
 		this.pincode = pincode;
 	}
-	
+
+
+
+
 	@Override
 	public String toString()
 	{
